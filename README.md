@@ -29,7 +29,12 @@ Após regerar o build e criar a imagem docker dele, basta configurar na sua IDE 
 ![image](https://user-images.githubusercontent.com/28828127/180908450-20cba716-ab94-4224-94f7-8edb961e21c1.png)
 
 
-Após isso basta rodar o docker:
+
+Após estas configurações e ter feito o mvn install para criação do jar, deve ser feito o build deste docker: 
+
+docker build -t spring-app . 
+
+Após ser gerado o build da imagem docker rodar o comando: 
 
 docker run -p 8080:8080 spring-app
 
